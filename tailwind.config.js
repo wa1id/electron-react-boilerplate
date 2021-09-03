@@ -10,13 +10,6 @@ module.exports = {
         cyan: colors.cyan,
       },
     },
-    fontFamily: {
-      sans: ['Proxima Nova', 'system-ui'],
-      serif: ['Proxima Nova', 'system-ui'],
-      mono: ['Proxima Nova', 'system-ui'],
-      display: ['Proxima Nova', 'system-ui'],
-      body: ['Proxima Nova', 'system-ui'],
-    },
   },
   variants: {
     extend: {},

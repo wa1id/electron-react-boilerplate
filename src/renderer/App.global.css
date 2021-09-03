@@ -19,15 +19,4 @@ body {
   h4 {
     @apply text-xl;
   }
-
-  @font-face {
-    font-family: Proxima Nova;
-    font-weight: 400;
-    src: url(../../assets/fonts/Proxima-Nova-Regular.woff) format('woff');
-  }
-  @font-face {
-    font-family: Proxima Nova;
-    font-weight: 500;
-    src: url(../../assets/fonts/Proxima-Nova-Bold.woff) format('woff');
-  }
 }
