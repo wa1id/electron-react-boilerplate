@@ -11,8 +11,6 @@ const Hello = () => {
       name: 'Los Angeles',
       state: 'CA',
       country: 'USA',
-    }).then(() => {
-      return console.log('success');
     });
   };
 
