@@ -2,17 +2,17 @@ import React from 'react';
 import { MemoryRouter as Router, Switch, Route } from 'react-router-dom';
 import './App.global.css';
 import Button from '@material-ui/core/Button';
-import { doc, getFirestore, setDoc } from 'firebase/firestore';
-import app from './firebaseapp';
+import { doc, setDoc } from 'firebase/firestore';
+import { db } from './firebaseapp';
 
 const Hello = () => {
-  const db = getFirestore(app);
-
   const myfunc = async () => {
     await setDoc(doc(db, 'cities', 'LA'), {
       name: 'Los Angeles',
       state: 'CA',
       country: 'USA',
+    }).then(() => {
+      return console.log('success');
     });
   };
 
